@@ -116,3 +116,10 @@ console.log(emailList);
 
 // Problem 3
 //Pulling numbers
+
+racNumber = [];
+const runNumber = (number) => {
+    racNumber += `${number.id} ${number.first_name} ${number.last_name} ${''}`;
+}
+runners.map(runNumber);
+console.log(racNumber);
