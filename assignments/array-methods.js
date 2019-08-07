@@ -107,7 +107,12 @@ console.log(sponsers);
 
 // Problem 2
 //Pulling e-mail adresses for varying reasons
-
+let emailList = []
+const runnersEmails = (emails) => {
+    emailList += `${emails.first_name} ${emails.last_name} ${' '}`;
+};
+runners.map(runnersEmails);
+console.log(emailList);
 
 // Problem 3
 //Pulling numbers
