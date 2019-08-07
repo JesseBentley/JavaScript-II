@@ -97,7 +97,17 @@ console.log(total);
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
+// Sponsors for marketing posibly
+let sponsors = []
+const sponsersList = (sponsor) => {
+    sponsors += `${sponsor.company_name} ${' '}`;
+};
+runners.forEach(sponserList);
+console.log(sponsers);
 
 // Problem 2
+//Pulling e-mail adresses for varying reasons
+
 
 // Problem 3
+//Pulling numbers
