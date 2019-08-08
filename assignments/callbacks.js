@@ -34,12 +34,16 @@ function getLength(arr, cb) {
   return cb = arr.length;
 }
 
-const arrLength = (arrayLength) => {console.log(arrayLength)};
-getLength(itms, arrLength)
+const arrLength = (arrayLength) => console.log(arrayLength);
+console.log(getLength(items, arrLength));
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
+  return cb = arr[arr.length - 1];
 }
+
+const lastItem = (lastIndex) => console.log(lastIndex);
+console.log(last(items, lastItem));
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
