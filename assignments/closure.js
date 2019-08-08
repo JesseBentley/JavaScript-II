@@ -1,6 +1,16 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+const test = () => {
+  let num = 0
+  const test2 = () => {
+    console.log(num++);
+    return test2;
+  }
+  let test = increment;
+  increment();
+  increment();
+}
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
