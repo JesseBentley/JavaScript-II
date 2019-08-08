@@ -47,7 +47,11 @@ console.log(last(items, lastItem));
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
+  return cb = x + y;
 }
+
+const addition = (sum) => console.log(sum);
+console.log(sumNums(3, 6, addition))
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
