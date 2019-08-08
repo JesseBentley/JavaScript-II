@@ -31,8 +31,11 @@ firstItem(items, function(first) {
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
-
+  return cb = arr.length;
 }
+
+const arrLength = (arrayLength) => {console.log(arrayLength)};
+getLength(itms, arrLength)
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
