@@ -102,8 +102,8 @@ let sponsors = []
 const sponsersList = (sponsor) => {
     sponsors += `${sponsor.company_name} ${' '}`;
 };
-runners.forEach(sponserList);
-console.log(sponsers);
+runners.forEach(sponsersList);
+console.log(sponsors);
 
 // Problem 2
 //Pulling e-mail adresses for varying reasons
