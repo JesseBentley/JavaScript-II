@@ -72,7 +72,7 @@ function contains(item, list, cb) {
 }
 
 const doesItExist = (doesIt) => console.log(doesIt);
-console.log('Gum', items, doesItExist)
+console.log(contains('Gum', items, doesItExist));
 
 /* STRETCH PROBLEM */
 
