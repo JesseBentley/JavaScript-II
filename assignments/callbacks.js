@@ -2,49 +2,77 @@
 
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
-/* 
-
   //Given this problem: 
   
-  function firstItem(arr, cb) {
+function firstItem(arr, cb) {
     // firstItem passes the first item of the given array to the callback function.
+    return cb = arr[0]
   }
 
   // Potential Solution:
 
+  const firstItemCb = (firstArrItem) => {
+
+    console.log(firstArrItem[0]);
+  };
+  
+  firstItem(items, firstItemCb);
+  
+
   // Higher order function using "cb" as the call back
-  function firstItem(arr, cb) {
+function firstItem(arr, cb) {
     return cb(arr[0]);
   }
 
   // Function invocation 
-  firstItem(items, function(first) {
+firstItem(items, function(first) {
     console.log(first)
   });
 
-*/
-
-
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
+  return cb = arr.length;
 }
+
+const arrLength = (arrayLength) => console.log(arrayLength);
+console.log(getLength(items, arrLength));
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
+  return cb = arr[arr.length - 1];
 }
+
+const lastItem = (lastIndex) => console.log(lastIndex);
+console.log(last(items, lastItem));
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
+  return cb = x + y;
 }
+
+const addition = (sum) => console.log(sum);
+console.log(sumNums(3, 6, addition))
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+  return cb = x * y;
 }
+
+const multiply = (times) => console.log(times);
+console.log(multiplyNums(3, 6, multiply));
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  for (let i = 0; i <= list.length; i++){
+    if (item === list[i]){
+      return cb = true;
+    }
+  }
 }
+
+const doesItExist = (doesIt) => console.log(doesIt);
+console.log(contains('Gum', items, doesItExist));
 
 /* STRETCH PROBLEM */
 
